@@ -1,0 +1,87 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    position: relative;
+    width: 100%;
+}
+
+.navbar {
+    background-color: #4a595d;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: rgb(100, 185, 77);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect */
+.navbar ul li a:hover {
+    background-color: #abadcb;
+    border-radius: 5px;
+    color: #b5efea;
+    
+}
+
+.navbar:hover {
+    transform: scale(1.5); 
+}
+
+/* Change color when scrolling */
+.scrolled {
+    background-color: #5d4886;
+    box-shadow: 0 4px 2px -2px rgb(60, 84, 130);
+}
+
+/* Sections Styling */
+section {
+    padding: 100px;
+    height: 100vh;
+}
+
+#home {
+    background-color: #b0c2cc;
+}
+
+#about {
+    background-color: #9fc6cb;
+}
+
+#services {
+    background-color: #9eb9c4;
+}
+
+#contact {
+    background-color: #9eb0b2;
+}
